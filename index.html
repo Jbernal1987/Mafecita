@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Mafecita</title>
+    <!-- Importación de fuentes premium desde Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* Fondo con atmósfera: negro profundo con un destello radial violeta muy sutil en el centro */
+            background: royalblue;
+            background: text;
+            background-image: radial-gradient(circle at center, #1a122c 0%, #07050a 70%);
+            color: #f5f3f4;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Contenedor principal con efecto Glassmorphism (Cristal templado) */
+        .card {
+            background: rgba(22, 18, 30, 0.65);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            max-width: 580px;
+            width: 100%;
+            padding: 50px 40px;
+            border-radius: 24px;
+            /* Borde ultra fino con brillo violeta */
+            border: 1px solid rgba(123, 44, 191, 0.35);
+            /* Sombras multicapa para dar profundidad y un aura violeta suave */
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 
+                        0 0 40px rgba(123, 44, 191, 0.15);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Detalle decorativo superior en oro pulido */
+        .header-accent {
+            width: 60px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #d4af37, transparent);
+            margin: 0 auto 30px auto;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.4rem;
+            font-weight: 400;
+            color: #ffffff;
+            margin-bottom: 35px;
+            letter-spacing: 1.5px;
+        }
+
+        .gold-text {
+            color: #d4af37;
+            font-style: italic;
+            background: linear-gradient(135deg, #ffe57f 0%, #d4af37 50%, #aa7c11 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 600;
+        }
+
+        /* Cuerpo del texto estilizado, con justificación limpia y espaciado premium */
+        .message-body {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            color: #e2daeb;
+            text-align: justify;
+            white-space: pre-line;
+            margin-bottom: 40px;
+            letter-spacing: 0.3px;
+        }
+
+        /* Formato especial para destacar la primera letra (Drop Cap) con elegancia */
+        .message-body::first-letter {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            float: left;
+            margin-right: 8px;
+            line-height: 1;
+            color: #d4af37;
+        }
+
+        /* Divisor sutil entre el texto y la música */
+        .divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        .divider::before, .divider::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.2), transparent);
+        }
+        .divider-dot {
+            width: 4px;
+            height: 4px;
+            background-color: #d4af37;
+            border-radius: 50%;
+            margin: 0 15px;
+            box-shadow: 0 0 8px #d4af37;
+        }
+
+        /* Contenedor multimedia integrado */
+        .media-container {
+            background: rgba(11, 9, 10, 0.5);
+            padding: 24px;
+            border-radius: 16px;
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            transition: border-color 0.3s ease;
+        }
+
+        .media-container:hover {
+            border-color: rgba(123, 44, 191, 0.4);
+        }
+
+        .media-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 400;
+            color: #b3a1c9;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        iframe {
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="header-accent"></div>
+        <h1>Para <span class="gold-text">Mafe</span></h1>
+        
+        <div class="message-body">Mujercita linda, prefiero ir directo al grano y hablarte con el corazón en la mano, sin rodeos ni intermediarios. Te entregué ese detalle porque me nació y porque sé perfectamente lo que valen los momentos que construimos juntos. Lo que siento por ti sigue intacto. 
+
+        No pretendo forzar nada, pero tengo claro que el amor real se expresa de frente. Esta página la hice yo mismo para dejarte este mensaje y esta canción, recordándote lo importante que eres para mí. 
+
+        La decisión de dar el paso y hablar está en tus manos. Aquí voy a estar cuando estés lista.</div>
+
+        <div class="divider">
+            <div class="divider-dot"></div>
+        </div>
+
+        <div class="media-container">
+            <div class="media-title">Una canción para acompañar</div>
+            
+            <!-- Reproductor oficial de Spotify integrado -->
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3xD05PlzUn3GfGbynb0KM7?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+    </div>
+
+</body>
+</html>
